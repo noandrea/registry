@@ -1,0 +1,142 @@
+{
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": "0",
+            "address": "cosmos1rq4wy4gt96dfn8mnpg93xv3wjr6trf2jkl5906",
+            "coins": [
+              {
+                "amount": "100000000",
+                "denom": "stake"
+              },
+              {
+                "amount": "1000",
+                "denom": "token"
+              }
+            ],
+            "public_key": null,
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": "0",
+            "address": "cosmos1nle60t3v6wywgmac5uaqmtm2w0xmffep4ku7qj",
+            "coins": [
+              {
+                "amount": "500",
+                "denom": "token"
+              }
+            ],
+            "public_key": null,
+            "sequence": "0"
+          }
+        }
+      ],
+      "params": {
+        "max_memo_characters": "256",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "memo": "123882b915aa243c725b3af195a3607d50f11094@195.201.41.246:26656",
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "commission": {
+                    "max_change_rate": "0.010000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "rate": "0.100000000000000000"
+                  },
+                  "delegator_address": "cosmos1rq4wy4gt96dfn8mnpg93xv3wjr6trf2jkl5906",
+                  "description": {
+                    "details": "",
+                    "identity": "",
+                    "moniker": "mynode",
+                    "security_contact": "",
+                    "website": ""
+                  },
+                  "min_self_delegation": "1",
+                  "pubkey": "cosmosvalconspub1zcjduepqellvv6mc85unmm9exqhygex5qtph06cqmtg3pa68gxp6dzjwpfgsng3a5p",
+                  "validator_address": "cosmosvaloper1rq4wy4gt96dfn8mnpg93xv3wjr6trf2jntqsrf",
+                  "value": {
+                    "amount": "100000000",
+                    "denom": "stake"
+                  }
+                }
+              }
+            ],
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8BJKJz0B6Td2RnYUN/6uuoY7fUH0C+68JIW/vsu4zAE"
+                },
+                "signature": "NiX822WjhwLfpeA0xO9cCkNpiPjBGfYtDieRgh/n4wkT1dVxS53UHJiRGUJXCiNgXmGV/RsS7fwVhXLJndrX7w=="
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "params": null,
+    "staking": {
+      "delegations": null,
+      "exported": false,
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "params": {
+        "bond_denom": "stake",
+        "historical_entries": 0,
+        "max_entries": 7,
+        "max_validators": 100,
+        "unbonding_time": "1814400000000000"
+      },
+      "redelegations": null,
+      "unbonding_delegations": null,
+      "validators": null
+    },
+    "supply": {
+      "supply": []
+    },
+    "voter": {}
+  },
+  "chain_id": "apeunit-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": 22020096,
+      "max_gas": -1,
+      "time_iota_ms": 1000
+    },
+    "evidence": {
+      "max_age_duration": 172800000000000,
+      "max_age_num_blocks": 100000
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "genesis_time": "2021-02-03T13:46:03.613180485Z"
+}
